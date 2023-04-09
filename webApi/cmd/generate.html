@@ -1,19 +1,24 @@
 <html>
 <head></head>
 <body>
-<form action="/generate" method="post">
+<form action="/generate/" method="post">
     <div>
         <label>generowanie dla wszystkich tabel</label>
-        <input type="number" name="val2" placeholder="podaj ilosc">
+        <input type="number" name="allTable" placeholder="podaj ilosc">
     </div>
     <div>
         <label>generowanie pojedynczej tabeli</label>
-        <input type="number" name="val1" placeholder="podaj ilosc">
-        <select value="option">
-            <option value="op1">tab 1</option>
-            <option>tab 2</option>
-            <option>tab 3</option>
-            <option>tab 4</option>
+        <input type="number" name="singleTable" placeholder="podaj ilosc">
+        <select name="options">
+            <option value="AutoZas">Auto Zastepcze</option>
+            <option value="HisAutaZAs">Historia Auta Zastepczego</option>
+            <option value="Klient">Klient</option>
+            <option value="Warsztat">Warsztat</option>
+            <option value="Zamowienia">Zamowienia</option>
+            <option value="Magazyn">Magazyn</option>
+            <option value="Pracownik">Pracownik</option>
+            <option value="SamochodKlienta">Samochod klienta</option>
+            <option value="USLUGA ">USLUGA </option>
         </select>
     </div>
     <div>
